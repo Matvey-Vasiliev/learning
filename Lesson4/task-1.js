@@ -1,1 +1,5 @@
-var numbers = [2, 3, 4, 5];
+let i = 1;
+while (i < 51) {
+    document.write(i + '<br>');
+    i++;
+}
