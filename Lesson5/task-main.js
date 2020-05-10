@@ -2,6 +2,8 @@ let piss = Math.sqrt(379);
 
 Math.floor(piss);
 
-num.toFixed(1);
+piss.toFixed(1);
 
-num.toFixed(2);
+piss.toFixed(2);
+
+console.log(Math.floor(piss))
