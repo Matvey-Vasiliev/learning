@@ -1,24 +1,24 @@
 //ЗАДАНИЕ 1
 
-let piss = Math.sqrt(379);
-Math.floor(piss);
-piss.toFixed(1);
-piss.toFixed(2);
-console.log(Math.floor(piss));
+let squareRoot = Math.sqrt(379);
+Math.floor(squareRoot);
+squareRoot.toFixed(1);
+squareRoot.toFixed(2);
+console.log(Math.floor(squareRoot), squareRoot.toFixed(1), squareRoot.toFixed(2));
 
 //ЗАДАНИЕ 2
 
-let rock = Math.sqrt(587);
-Math.ceil(rock);
-Math.floor(rock);
-console.log(Math.floor(rock));
+let squareRoot2 = Math.sqrt(587);
+Math.ceil(squareRoot2);
+Math.floor(squareRoot2);
+console.log(Math.floor(squareRoot2), Math.ceil(squareRoot2));
 
 //ЗАДАНИЕ 3
 
-let what = [4, -2, 5, 19, -130, 0, 10];
-Math.min.apply(null, what);
-Math.max.apply(null, what);
-console.log(Math.min.apply(null, what));
+let numberRange = [4, -2, 5, 19, -130, 0, 10];
+Math.min.apply(null, numberRange);
+Math.max.apply(null, numberRange);
+console.log(Math.min.apply(null, numberRange), Math.max.apply(null, numberRange));
 
 //ЗАДАНИЕ 4
 
@@ -32,8 +32,7 @@ console.log(getRandomInt(10, 100));
 var arr = [];
 while (arr.length < 10) {
     var n = Math.floor(Math.random() * 100);
-    if (arr.indexOf(n) === -1);
-    arr.push(n);
+    if (arr.push(n));
 }
 
 console.log(arr);
