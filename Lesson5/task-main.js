@@ -32,7 +32,7 @@ console.log(getRandomInt(10, 100));
 var arr = [];
 while (arr.length < 10) {
     var n = Math.floor(Math.random() * 100);
-    if (arr.push(n));
+    arr.push(n);
 }
 
 console.log(arr);
