@@ -1,9 +1,8 @@
 //ЗАДАНИЕ 1
 
-let str = 'aaa@bbb@ccc';
-let dog = str.split('@');
-let exc = dog.join('!');
-console.log(exc);
+let str = "aaa@bbb@ccc";
+let temp = str.replace(/@/g,"!");
+console.log(temp);
 
 //ЗАДАНИЕ 2
 
