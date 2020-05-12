@@ -33,14 +33,16 @@ console.log(number);
 //ЗАДАНИЕ 6
 
 let langs = ['js', 'css', 'jq'];
-console.log(langs[0], langs[2]);
+console.log(langs[0]);
+console.log(langs[2]);
 
 //ЗАДАНИЕ 7
 
 let numbers = [1, 2, 3, 4, 5];
 let container1 = numbers.slice(0, 3);
 let container2 = numbers.slice(3);
-console.log(container1, container2);
+console.log(container1);
+console.log(container2);
 
 //ЗАДАНИЕ 8
 
