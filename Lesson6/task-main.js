@@ -1,38 +1,40 @@
 //ЗАДАНИЕ 1
 
-let squareRoot = Math.sqrt(379);
-Math.floor(squareRoot);
-squareRoot.toFixed(1);
-squareRoot.toFixed(2);
-console.log(Math.floor(squareRoot), squareRoot.toFixed(1), squareRoot.toFixed(2));
+let str = 'aaa@bbb@ccc';
+let dog = str.split('@');
+let exc = dog.join('!');
+console.log(exc);
 
 //ЗАДАНИЕ 2
 
-let squareRoot2 = Math.sqrt(587);
-Math.ceil(squareRoot2);
-Math.floor(squareRoot2);
-console.log(Math.floor(squareRoot2), Math.ceil(squareRoot2));
+//ВАР 1
+let abc = 'aaa bbb ccc';
+let aaa = abc.substr(0, 4);
+let ccc = abc.substr(8, 3);
+console.log(aaa + ccc);
+
+//ВАР 2
+let abc = 'aaa bbb ccc';
+let aaa = abc.slice(0, 4);
+let ccc = abc.slice(8);
+console.log(aaa + ccc);
+
+//ВАР 3
+let abc = 'aaa bbb ccc';
+let aaa = abc.substring(0, 4);
+let ccc = abc.substring(8);
+console.log(aaa + ccc);
 
 //ЗАДАНИЕ 3
 
-let numberRange = [4, -2, 5, 19, -130, 0, 10];
-Math.min.apply(null, numberRange);
-Math.max.apply(null, numberRange);
-console.log(Math.min.apply(null, numberRange), Math.max.apply(null, numberRange));
+let date = '2025-12-31';
+let arr1 = date.split(['-']);
+let arr2 = arr1.reverse();
+let result = arr2.join('/');
+
+console.log(result);
 
 //ЗАДАНИЕ 4
 
-function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-console.log(getRandomInt(10, 100));
-
-//ЗАДАНИЕ 5
-
-var arr = [];
-while (arr.length < 10) {
-    var n = Math.floor(Math.random() * 100);
-    arr.push(n);
-}
-
-console.log(arr);
+let learn = 'я учу javascript';
+console.log(learn.length);
