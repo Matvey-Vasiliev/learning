@@ -2,21 +2,23 @@
 /*Дан массив с числами. Проверьте, что в этом массиве есть число 5.
 Если есть - выведите 'да', а если нет - выведите 'нет'.*/
 
-var arr = [20, 1, 34, 88, 5];
-var flag = false;
-
-for (var i = 0; i < arr.length; i++) {
-    if (arr[i] == '25') { /*Сюда вносим значение*/
-        flag = true;
-        break;
+function ArrayNumberFinder(num) {
+    var arr = [20, 1, 34, 88, 5];
+    var flag = false;
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] === num) {
+            flag = true;
+            break;
+        }
+    }
+    if (flag === true) {
+        alert('да');
+    } else {
+        alert('нет');
     }
 }
 
-if (flag === true) {
-    alert('да');
-} else {
-    alert('нет');
-}
+ArrayNumberFinder(1)
 
 
 //Задача 2
@@ -46,8 +48,7 @@ switch (divisionProcess) {
 
 var num = 31;
 
-function hasElem(arr)
-{
+function hasElem(arr) {
     if (num / 1 !== num) // ПРОВЕРКА 31 / 1 = 31
     {
         return false;
@@ -61,7 +62,6 @@ function hasElem(arr)
 }
 
 alert(hasElem(num));
-
 
 
 //Задача 3
