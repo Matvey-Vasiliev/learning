@@ -1,30 +1,24 @@
 //Задача 1.
 //Сделайте функцию, которая возвращает куб числа. Число передается параметром.
 
-let cube = function(num) {
+function cube(num) {
     return num * num * num
 };
-let result = (cube(4));
-alert(result);
+alert(cube(2));
 
 //Задача 2.
 //Сделайте функцию, которая отнимает от первого числа второе и делит на третье.
 
-let cube = function(one, two, three) {
+function operation(one, two, three) {
     return (one - two) / three
 };
-let result = (cube(50, 20, 2));
-alert(result);
-
-
-
+alert(operation(60, 20, 2));
 
 //Задача 3.
 //Сделайте функцию, которая принимает параметром число от 1 до 7, а возвращает день недели на русском языке.
 
-
-let dayOfWeek = function (number) {
-    switch (number) {
+function DayOfWeek(day) {
+    switch (day) {
         case 1:
             alert('Понедельник');
             break;
@@ -46,6 +40,10 @@ let dayOfWeek = function (number) {
         case 7:
             alert('Воскресение');
             break;
+        default:
+            alert('Задайте число от 1 до 7');
+            break;
+
     }
 }
-let result = (dayOfWeek(7));
+let setDay = (DayOfWeek(1));
