@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<!--Задача 1. Алерт по нажатию на кнопку-->
+
+<input type="submit" value="Нажми на меня" onclick="PressForHello()">
+
+<!--Задача 2. Изменение текста в инпуте-->
+
+<input type="submit" value="Нажми на меня" onclick="TextChanger()">
+<input type="text" value="???" id="test">
+
+<!--Задача 3. Вывод содержимого инпута-->
+
+<input type="submit" value ="Нажми на меня" onclick="TextInAlert()">
+<input type="text" id="test">
+
+<!--Задача 4. Обмен содержимым между инпутами-->
+
+<input type="submit" value ="Нажми на меня" onclick="ChangeInputPlace()">
+<input type="text" value="???" id="left">
+<input type="text" value="!!!" id="right">
+
+<!--Задача 5. По нажатию на кнопку меняется ее текст-->
+
+<input type="submit" value="Нажми на меня" id="test" onclick="ButtonTextChanger()">
+
+<!--Задача 6. Работа с CSS-->
+
+<input type="submit" value="Нажми на меня" onclick="TextColorChanger()">
+<input type="text" value="Какой-то текст!" id="test">
+
+<!--Задача 7. Блокирование полей ввода-->
+
+<input type="submit" value="Заблокировать" id="left" onclick="TextBlocker(true)">
+<input type="submit" value="Отблокировать" id="right" onclick="TextBlocker(false)">
+<input type="text" value="Какой-то текст!" id="test">
+
+</body>
+</html>
