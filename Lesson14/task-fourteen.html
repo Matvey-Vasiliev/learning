@@ -3,43 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <script src="task-fourteen.js"></script>
 </head>
 <body>
 
-<!--Задача 1. Алерт по нажатию на кнопку-->
+    <p>Задача 1. Алерт "Привет!" по нажатию на кнопку</p>
 
-<input type="submit" value="Нажми на меня" onclick="PressForHello()">
+    <input type="submit" value="Нажми на меня" onclick="PressForHello()">
+    <br>
 
-<!--Задача 2. Изменение текста в инпуте-->
+    <p>Задача 2. Изменение текста в инпуте с ??? на !!!</p>
 
-<input type="submit" value="Нажми на меня" onclick="TextChanger()">
-<input type="text" value="???" id="test">
+    <input type="submit" value="Нажми на меня" onclick="TextChanger()">
+    <input type="text" value="???" id="test2">
+    <br>
 
-<!--Задача 3. Вывод содержимого инпута-->
+    <p>Задача 3. Вывод алертом содержимого инпута</p>
 
-<input type="submit" value ="Нажми на меня" onclick="TextInAlert()">
-<input type="text" id="test">
+    <input type="submit" value="Нажми на меня" onclick="TextInAlert()">
+    <input type="text" id="test3">
+    <br>
 
-<!--Задача 4. Обмен содержимым между инпутами-->
+    <p>Задача 4. Обмен содержимым между инпутами</p>
 
-<input type="submit" value ="Нажми на меня" onclick="ChangeInputPlace()">
-<input type="text" value="???" id="left">
-<input type="text" value="!!!" id="right">
+    <input type="submit" value="Нажми на меня" onclick="ChangeInputPlace()">
+    <input type="text" value="???" id="left">
+    <input type="text" value="!!!" id="right">
+    <br>
 
-<!--Задача 5. По нажатию на кнопку меняется ее текст-->
+    <p>Задача 5. По нажатию на кнопку меняется ее текст</p>
 
-<input type="submit" value="Нажми на меня" id="test" onclick="ButtonTextChanger()">
+    <input type="submit" value="Нажми на меня" id="test5" onclick="ButtonTextChanger()">
+    <br>
 
-<!--Задача 6. Работа с CSS-->
+    <p>Задача 6. Работа с CSS, в инпуте меняется цвет на красный</p>
 
-<input type="submit" value="Нажми на меня" onclick="TextColorChanger()">
-<input type="text" value="Какой-то текст!" id="test">
+    <input type="submit" value="Нажми на меня" onclick="TextColorChanger()">
+    <input type="text" value="Какой-то текст!" id="test6">
+    <br>
 
-<!--Задача 7. Блокирование полей ввода-->
+    <p>Задача 7. Блокирование полей ввода</p>
 
-<input type="submit" value="Заблокировать" id="left" onclick="TextBlocker(true)">
-<input type="submit" value="Отблокировать" id="right" onclick="TextBlocker(false)">
-<input type="text" value="Какой-то текст!" id="test">
+    <input type="submit" value="Заблокировать" id="left2" onclick="TextBlocker(true)">
+    <input type="submit" value="Отблокировать" id="right2" onclick="TextBlocker(false)">
+    <input type="text" value="Какой-то текст!" id="test7">
+    <br>
 
 </body>
 </html>
