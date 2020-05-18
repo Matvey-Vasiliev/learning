@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="task-fourteen.js"></script>
+</head>
+<body>
+
+    <p>Задача 1. Алерт "Привет!" по нажатию на кнопку</p>
+
+    <input type="submit" value="Нажми на меня" onclick="PressForHello()">
+    <br>
+
+    <p>Задача 2. Изменение текста в инпуте с ??? на !!!</p>
+
+    <input type="submit" value="Нажми на меня" onclick="TextChanger()">
+    <input type="text" value="???" id="test2">
+    <br>
+
+    <p>Задача 3. Вывод алертом содержимого инпута</p>
+
+    <input type="submit" value="Нажми на меня" onclick="TextInAlert()">
+    <input type="text" id="test3">
+    <br>
+
+    <p>Задача 4. Обмен содержимым между инпутами</p>
+
+    <input type="submit" value="Нажми на меня" onclick="ChangeInputPlace()">
+    <input type="text" value="???" id="left">
+    <input type="text" value="!!!" id="right">
+    <br>
+
+    <p>Задача 5. По нажатию на кнопку меняется ее текст</p>
+
+    <input type="submit" value="Нажми на меня" id="test5" onclick="ButtonTextChanger()">
+    <br>
+
+    <p>Задача 6. Работа с CSS, в инпуте меняется цвет на красный</p>
+
+    <input type="submit" value="Нажми на меня" onclick="TextColorChanger()">
+    <input type="text" value="Какой-то текст!" id="test6">
+    <br>
+
+    <p>Задача 7. Блокирование полей ввода</p>
+
+    <input type="submit" value="Заблокировать" onclick="TextBlocker(true)">
+    <input type="submit" value="Отблокировать" onclick="TextBlocker(false)">
+    <input type="text" value="Какой-то текст!" id="test7">
+    <br>
+
+</body>
+</html>
