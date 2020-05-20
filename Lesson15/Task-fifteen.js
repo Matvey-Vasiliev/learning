@@ -17,9 +17,9 @@ function ChangeTagNotText() {
 
 function ChangeParagraphText() {
     let paragraph = document.getElementsByTagName('p');
-    paragraph[0].innerHTML = '38';
-    paragraph[1].innerHTML = '39';
-    paragraph[2].innerHTML = '40';
+    for (var i = 0; i < paragraph.length; i++) {
+        paragraph[i].innerHTML = i + 1;
+    }
 }
 
 //Задача 4. На getElementsByClassName
@@ -27,17 +27,17 @@ function ChangeParagraphText() {
 
 function ChangeTextByClass() {
     let requiredClass = document.getElementsByClassName('zzz');
-    requiredClass[0].innerHTML = '59';
-    requiredClass[1].innerHTML = '60';
-    requiredClass[2].innerHTML = '61';
+    for (var i = 0; i < requiredClass.length; i++) {
+        requiredClass[i].innerHTML = i + 1;
+    }
 }
 
 //Задача 5. На querySelectorAll
 //Задача. Дан HTML код (см. под задачей). Поменяйте содержимое абзацев с классом zzz на их порядковый номер в коде.
 
 function ChangeOnlyTagP() {
-    let findClass = document.querySelectorAll('p.www');
+    let findClass = document.querySelectorAll('h3.www');
     for (var i = 0; i < findClass.length; i++) {
-        findClass[i].innerHTML = i + 82;
+        findClass[i].innerHTML = i + 1;
     }
 }
