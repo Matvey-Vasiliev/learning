@@ -13,7 +13,7 @@ function ChangeTagNotText() {
 }
 
 //Задача 3. На getElementsByTagName. Дан HTML код (см. под задачей).
-//Поменяйте содержимое абзацев на их порядковый номер в коде.
+//Поменяйте содержимое абзацев на их порядковый номер.
 
 function ChangeParagraphText() {
     let paragraph = document.getElementsByTagName('p');
@@ -23,7 +23,7 @@ function ChangeParagraphText() {
 }
 
 //Задача 4. На getElementsByClassName
-//Задача. Дан HTML код (см. под задачей). Поменяйте содержимое элементов с классом zzz на их порядковый номер в коде.
+//Задача. Дан HTML код (см. под задачей). Поменяйте содержимое элементов с классом zzz на их порядковый номер.
 
 function ChangeTextByClass() {
     let requiredClass = document.getElementsByClassName('zzz');
@@ -33,7 +33,7 @@ function ChangeTextByClass() {
 }
 
 //Задача 5. На querySelectorAll
-//Задача. Дан HTML код (см. под задачей). Поменяйте содержимое абзацев с классом zzz на их порядковый номер в коде.
+//Задача. Дан HTML код (см. под задачей). Поменяйте содержимое абзацев с классом zzz на их порядковый номер.
 
 function ChangeOnlyTagP() {
     let findClass = document.querySelectorAll('h3.www');
