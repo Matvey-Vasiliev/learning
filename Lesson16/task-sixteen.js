@@ -1,7 +1,7 @@
 //Задача 1. Выведите на экран текущие день, месяц и год в формате 'год-месяц-день'.
 
 let date = new Date();
-alert(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + (date.getDate()))
+alert(date.getFullYear() + '-' + (date.getMonth() + 1) + '-' + (date.getDate()));
 
 //Задача 2. Выведите на экран текущий месяц словом, по-русски
 
@@ -22,18 +22,17 @@ alert(ShowDay(date.getDay()));
 
 //Задача 4.Выведите на экран количество часов, прошедшее между 1 марта 1988 года и текущим моментом с помощью Date.parse.
 
-let dateInPast = Date.parse('1988-03-01T00:00:00');
+let dateInPast = Date.parse('1988-03-01');
 let thisMoment = new Date();
 let nowMsec = thisMoment.getTime();
 let substraction = nowMsec - dateInPast;
-let hours = (substraction / 3600000);
-alert(hours);
+let hours = Math.floor(substraction / 3600000);
+alert(hours + ' часов');
 
 //Задача5.Выведите на экран количество секунд с начала дня до настоящего момента времени.
 
-let todayStart = Date.parse('2020-05-17T00:00:00');
-let thisMoment = new Date();
-let nowMsec = thisMoment.getTime();
-let substraction = nowMsec - todayStart;
-let seconds = (substraction / 1000);
-alert(seconds);
+let dateNow = new Date();
+let dayStart = new Date(dateNow.getFullYear(), dateNow.getMonth(), dateNow.getDate());
+let todayMilSec = dateNow.getTime();
+let seconds = Math.floor((todayMilSec - dayStart)/1000);
+alert(seconds + ' секунд');
